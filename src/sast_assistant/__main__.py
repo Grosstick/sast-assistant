@@ -111,7 +111,7 @@ def run_scan(args: argparse.Namespace, config: Config) -> int:
         f"Target: {target_path}\n"
         f"Output: {output_path}\n"
         f"AI Analysis: {'Disabled' if args.no_ai else 'Enabled'}",
-        title="🔍 Security Scan",
+        title="Security Scan",
     ))
     
     start_time = time.time()
