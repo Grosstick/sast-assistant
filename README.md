@@ -136,10 +136,10 @@ sast-assistant/
 ## Pipeline Architecture
 
 ```
-┌─────────────┐    ┌──────────────┐    ┌────────────┐    ┌──────────────┐
+┌─────────────┐     ┌──────────────┐    ┌────────────┐     ┌──────────────┐
 │   Scanner   │───▶│  Extractor   │───▶│ AI Engine  │───▶│   Reporter   │
-│  (Semgrep)  │    │  (Context)   │    │  (Gemini)  │    │  (Markdown)  │
-└─────────────┘    └──────────────┘    └────────────┘    └──────────────┘
+│  (Semgrep)  │     │  (Context)   │    │  (Gemini)  │     │  (Markdown)  │
+└─────────────┘     └──────────────┘    └────────────┘     └──────────────┘
      │                   │                   │                   │
      ▼                   ▼                   ▼                   ▼
   JSON output      Code snippets       AI analysis         .md report
